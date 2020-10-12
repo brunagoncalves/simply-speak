@@ -9,6 +9,7 @@ function speak() {
 
 function stop() {
   speechSynthesis.cancel();
+  document.getElementById('clean').innerHTML = 'Seu Texto aqui!';
 }
 
 function setText(event) {
