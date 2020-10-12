@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Speak</title>
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <div class="container content">
+      <h2>Cole sua leitura abaixo!</h2>
+      <div
+        class="text-oninput"
+        id="clean"
+        onclick="cleanText()"
+        contenteditable
+        oninput="setText(event)"
+      >
+        Seu texto aqui
+      </div>
+
+      <div class="buttons">
+        <button class="btn" onclick="speak()">
+          <img src="/img/sound_max.svg" alt="Play" />
+        </button>
+        <button class="btn" onclick="stop()">
+          <img src="/img/sound_mute.svg" alt="Stop" />
+        </button>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
